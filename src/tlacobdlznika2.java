@@ -1,4 +1,4 @@
-public class tlacobdlznika {
+public class tlacobdlznika2 {
 
 
     public static void main(String[] args)
@@ -6,15 +6,16 @@ public class tlacobdlznika {
     {
 
         //SIRKA OBDLZNIKA
-         int stlpec = 30;
+         int stlpec = 300;
 
         //VYSKA OBDLZNIKA
-         int riadok = 7;
+         int riadok = 70;
 
-        if (stlpec<riadok){
-            System.out.println("Obdlznik ma nespravny pomer stran, vyska musi byt mensia ako sirka.");
-            return;
-        }
+
+         if (stlpec<riadok){
+             System.out.println("Obdlznik ma nespravny pomer stran, vyska musi byt mensia ako sirka.");
+             return;
+         }
 
          // VOLAM METODU BEZ POTREBY VRATENIA VYSLEDKU - VOID
          tiskniObdelnik(stlpec,riadok);
