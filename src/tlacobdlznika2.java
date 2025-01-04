@@ -51,6 +51,8 @@ public class tlacobdlznika2 {
 
                     if (s < (stlpec - 1)) {
                         System.out.print(" ");
+
+
                     }
 
                 }

@@ -9,10 +9,11 @@ public class tlacobdlznika {
          int stlpec = 30;
 
         //VYSKA OBDLZNIKA
-         int riadok = 7;
+         int riadok = 5;
 
-        if (stlpec<riadok){
-            System.out.println("Obdlznik ma nespravny pomer stran, vyska musi byt mensia ako sirka.");
+        if (stlpec<=riadok){
+            System.out.println();
+            System.out.println("---Obdlznik ma nespravny pomer stran, vyska musi byt mensia ako sirka---");
             return;
         }
 
@@ -26,19 +27,22 @@ public class tlacobdlznika {
 
     public static void tiskniObdelnik(int stlpec, int riadok) {
 
-        // SPRACOVAVAM RIADKY
+        // SPRACOVAVAM RIADKY/VYSKU
+
         for (int r = 1; r <= riadok; r++) {
             System.out.println(" ");
 
-            // TESTUJM RIADOK PRVY A POSLEDNY. TLACIM HVIEZDICKY.
+            // TESTUJEM RIADOK PRVY A POSLEDNY. TLACIM HVIEZDICKY DO STLPCOV
+
             if (r == 1 || r == riadok) {
                 for (int s = 1; s <= stlpec; s++) {
                     System.out.print("*");
                 }
 
-                // TESTUJEM RIADOK DRUHY A PREDPOSLEDNY. TLACIM HVIEZDICKA_MEDZERY_HVIEZDICKA
+
             }
 
+            // TESTUJEM RIADOK DRUHY A PREDPOSLEDNY. TLACIM HVIEZDICKA_MEDZERY_HVIEZDICKA DO STLPCOV
 
             if (r > 1 && r < riadok) {
                 for (int s = 1; s <= stlpec; s++) {
