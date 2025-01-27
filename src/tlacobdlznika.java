@@ -9,12 +9,12 @@ public class tlacobdlznika {
          int stlpec = 30;
 
         //VYSKA OBDLZNIKA
-         int riadok = 5;
+         int riadok = 30;
 
-        if (stlpec<=riadok){
+        if (stlpec==riadok){
             System.out.println();
-            System.out.println("---Obdlznik ma nespravny pomer stran, vyska musi byt mensia ako sirka---");
-            return;
+            System.out.println("---Obdlznik ma nespravny pomer stran---");
+            System.exit(1);
         }
 
          // VOLAM METODU BEZ POTREBY VRATENIA VYSLEDKU - VOID
